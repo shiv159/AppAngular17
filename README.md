@@ -1,5 +1,5 @@
 # Ang17
-###T his Project contains Basic code snippet of angular 17.
+### This Project contains Basic code snippet of angular 17.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
 
