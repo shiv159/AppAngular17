@@ -1,0 +1,63 @@
+<p>user-profile works!</p>
+<!-- interpolation -->
+<div>
+    <h1>interpolation</h1>
+    <h5>{{name}}</h5>
+    <br>
+</div>
+<!-- property binding -->
+<div>
+    <h1>property-binding</h1>
+    <button [disabled]="btnDisabled"> click me!</button>
+    <br>
+    <br>
+</div>
+<!-- event binding -->
+<div>
+    <h1>event-binding</h1>
+    <input type="text" (input)="btnClick($event)" />
+    <br>
+    <br>
+</div>
+<!-- two-way binding -->
+<div>
+    <h1>two-way binding</h1>
+    <input type="text" [(ngModel)]="name"/>
+    <br>
+    <br>
+</div>
+<!-- control flow -->
+<div>
+    <h1>for loops</h1>
+    <div>
+        @for (user of users; track $index) {
+        <div>
+            <p>{{user.name}}</p>
+            <p>{{user.age}}</p>
+        </div>
+        }
+    </div>
+
+    <h1>Age less that 30</h1>
+    <div>
+        @for(user of users; track $index) {
+            @if (user.age<30) {
+            <div>
+                <p>{{user.name}}</p>
+                <p>{{user.age}}</p>
+            </div>
+            }
+            
+        }
+    </div>
+</div>
+<!--  parent to child-->
+<div>
+    <h1>Parent to child</h1>
+    <p>{{parent_data}}</p>
+</div>
+<!--  child to parent-->
+<div>
+    <h1>child to parent</h1>
+    <button (click)="sendDataToParent()">send data to parent</button>
+</div>
