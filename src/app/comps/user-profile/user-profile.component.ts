@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input,Output } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CustomDirectiveDirective } from '../../directives/custom-directive.directive';
 
 @Component({
   selector: 'app-user-profile',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,CustomDirectiveDirective],
   templateUrl: './user-profile.component.html',
   styleUrl: './user-profile.component.css'
 })
